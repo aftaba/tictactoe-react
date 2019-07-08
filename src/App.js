@@ -51,8 +51,17 @@ class App extends Component{
                 <div className="main-box">
                     {Board}
                 </div>
+                <div className="reset" onClick={ (e) => this.reset() } >Reset</div>
             </div>
         );
+    }
+
+    reset() {
+        this.setState( {
+            board : Array(9).fill(null),
+            player : "X",
+            winner : null
+        } );
     }
 }
 

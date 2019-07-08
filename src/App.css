@@ -15,3 +15,8 @@
     line-height: 3;
     font-size: 50px;
 }
+.reset{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 20px;
+}
